@@ -59,7 +59,7 @@ public class SignupController {
     log.info(form.toString());
 
     //formをMUserクラスに変換
-    MUser user=modelMapper.map(form, MUser.class);
+    MUser user = modelMapper.map(form, MUser.class);
 
     //ユーザー登録
     userService.signup(user);
